@@ -203,16 +203,9 @@ a {
 @media (max-width: 767px) {
   .form-flex {
     display: block;
+    padding-top: 20px;
   }
-  /* .blok-text-from1{
-    width: 157px;
-  }
-  .blok-text-from2{
-    width: 185px;
-  } */
-  .blok-text-form {
-    margin-left: 67px;
-  }
+ 
 }
 .form-flex {
   text-align: center;
@@ -519,6 +512,72 @@ input {
   }
 }
 
+.about-us-container{}
+.content-text-about{
+  display: flex;
+  justify-content: space-around;
+  padding: 90px 0;
+}
+.about-title{
+  color: rgb(85, 85, 218);
+  font-weight:bold;
+  font-size: 22px
+}
+.about-text{
+  color: rgb(75, 73, 73);
+  font-size: 18px;
+}
+.about-text{
+  max-width: 400px;
+}
+.carousel-container {
+  /* width: 100%; */
+  max-width: 400px;
+  }
+
+.carousel-item {
+  text-align: center;
+  /* border: 1px solid #ddd; */
+  padding: 20px;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slick-next::before, .slick-prev::before {
+  color: rgb(79, 79, 80) !important;
+  z-index: 1 !important;
+  font-size: 40px !important;
+}
+.slick-next  {
+  right: 20px !important;
+  z-index: 1 !important;
+
+}
+.slick-prev {
+  left: 0 !important;
+  z-index: 1 !important;
+
+}
+
+@media (max-width:767px) {
+  .content-text-about{
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-text{
+  padding: 0 10px;
+}
+
+}
+@media (min-width:768px){
+  .about-text {
+    max-width: 250px;
+}
+
+}
 .container-info {
   position: relative;
   background-image: url("/img/bg-02.jpg");
@@ -740,6 +799,9 @@ input {
   color: white;
   margin: 40px;
 }
+.nutrition{
+  font-size: 18px;
+}
 @media (min-width:768px){
   .flex-card-container{
     display: flex;
@@ -775,7 +837,7 @@ input {
 }
 
 .footer-container {
-  background-color: gray;
+  background-color: rgb(93, 76, 240);
 }
 .about-blok {
 }
@@ -784,12 +846,22 @@ input {
 .contakt-nav {
 }
 .contact-flex2{
+  
+}
+.img-contact-logo{
   width: 20px;
-  height:20px;
+  height: auto;
 }
 .contack-email {
 }
 .logo-footer {
 }
 
+.contact-wrap {
+  display: flex;;
+}
 
+.contact-item {
+  display: flex;
+  align-items: center;
+}
